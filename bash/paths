@@ -1,0 +1,11 @@
+
+# Add RVM to PATH for scripting
+PATH="$PATH:$HOME/.rvm/bin" 
+
+# Put /usr/local/bin in front of /usr/bin so brew installed apps come first. 
+PATH="/usr/local/bin:$PATH" 
+
+# Put my local bin dirs first.
+PATH="~/bin:~/.bin"
+
+export PATH
