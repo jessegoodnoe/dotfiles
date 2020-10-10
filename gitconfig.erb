@@ -2,9 +2,16 @@
 	name = <%= print("Your Name: "); STDOUT.flush; STDIN.gets.chomp %>
 	email = <%= print("Your Email: "); STDOUT.flush; STDIN.gets.chomp %>
 [alias]
+	stll = log --graph --pretty=oneline --decorate --abbrev-commit
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	st = status
 	co = checkout
+	ci = commit
+	br = branch
+	mm = !git fetch -a && git merge origin/master
 [color]
-	diff = auto
+	diff = true
+	ui = true
 	status = auto
 	branch = auto
 [core]
